@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch-9A</title>
+    <!-- css link  -->
+<link rel="stylesheet" href="./styles/style.css">
+      <!-- Tailwind CDN  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind color CDN -->
+  <script>
+    tailwind.config = {
+ content: ["*"],
+       theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+                        'hockey-primary': '#FF4240',
+
+          }
+        }
+      }
+    };
+
+  </script>
+    <!-- Daisy-UI CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css"
+ rel="stylesheet" type="text/css" />
+
+ <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<!-- button onclick  -->
+<script>
+
+  function welcome() {
+    var name = prompt("Please tell me your name ");
+
+    alert( "Hello " + name);
+console.log("my name is" + name );
+  }
+</script>
+<body>
+
+  
+<!-- header part  -->
+    <header class="container mx-auto">
+      <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+       
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Pages</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Contact</a></li>
+
+      </ul>
+    </div>
+    <a class=" font-extrabold text-4xl ">Hockey<span class="text-red-600">’</span>s</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 font-bold text-base ">
+
+        <li class="hover:text-red-500 duration-300 ease-in-out"><a>Home</a></li>
+        <li class="hover:text-red-500 duration-300 ease-in-out"><a>About</a></li>
+        <li class="hover:text-red-500 duration-300 ease-in-out"><a>Pages</a></li>
+        <li class="hover:text-red-500 duration-300 ease-in-out"><a>Blog</a></li>
+        <li class="hover:text-red-500 duration-300 ease-in-out"><a>Contact</a></li>
+
+    </ul>
+  </div>
+  <div class="navbar-end">
+
+    <a onclick="welcome()" class=" btn bg-hockey-primary text-white" href="">Get Ticket</a>
+  </div>
+</div>
+<!-- banner part  -->
+ <div class="relative m-5"> 
+
+  <div class="carousel w-full">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img
+      src="./Images/1.png"
+      class="w-full" />
+    <div class="absolute  left-6 bottom-6  flex justify-between space-x-3">
+      <a href="#slide4" class="btn btn-circle bg-slate-900 text-white">❮</a>
+      <a href="#slide2" class="btn btn-circle bg-slate-900 text-white">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="./Images/1.png"
+      class="w-full" />
+    <div class="absolute  left-6 bottom-6  flex justify-between space-x-3">
+      <a href="#slide1" class="btn btn-circle bg-slate-900 text-white">❮</a>
+      <a href="#slide3" class="btn btn-circle bg-slate-900 text-white">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <img
+      src="./Images/1.png"
+      class="w-full" />
+   <div class="absolute  left-6 bottom-6  flex justify-between space-x-3">
+      <a href="#slide3" class="btn btn-circle bg-slate-900 text-white">❮</a>
+      <a href="#slide4" class="btn btn-circle bg-slate-900 text-white">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+    <img
+      src="./Images/1.png"
+      class="w-full" />
+   <div class="absolute  left-6 bottom-6  flex justify-between space-x-3">
+      <a href="#slide3" class="btn btn-circle bg-slate-900 text-white">❮</a>
+      <a href="#slide1" class="btn btn-circle bg-slate-900 text-white">❯</a>
+    </div>
+  </div>
+</div>
+<!-- small box  -->
+<div class="lg:absolute bottom-12  right-12 lg:w-1/3 
+ bg-black text-white rounded-xl p-5 space-y-2">
+<h3 class="font-extrabold text-xl">Meet all the heroes from the field</h3>
+<p class="font-medium text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+</div>
+ </div>
+
+    </header>
+    <!-- MAIN PART  -->
+     <main class="container mx-auto">
+<!-- statistics section  -->
+<section class="my-24   ">
+  <!-- professional club  -->
+  <div class="border-y-4 border-dashed flex flex-col justify-center items-center space-y-3  pb-5">
+    <h2 class="font-extrabold text-4xl mt-8">Professional Hockeys Club</h2>
+    <p class="font-medium text-base opacity-80  w-1/2 text-center   ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  </div>
+ <!-- percentage section  -->
+
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 gap-5 ">
+  <!-- first card  -->
+  <div  class="flex flex-col justify-center items-center space-y-2 p-5 ">
+<div class="relative">
+  <div class=" rotate-90  z-50 radial-progress  text-slate-200"   style="--value:20;" aria-valuenow="80" role="progressbar"></div>
+
+  <div class=" absolute  top-0 left-0   radial-progress text-red-500 " style="--value:100;" aria-valuenow="100" role="progressbar">87% </div>
+</div>
+<h3 class="font-semibold text-xl">Prayer Facility</h3>
+<p class="opacity-80 text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+<!-- second card  -->
+<div  class="flex flex-col justify-center items-center space-y-2 p-5 ">
+<div class="relative">
+  <div class="   z-50 radial-progress text-green-400" style="--value:90;" aria-valuenow="95" role="progressbar">95%</div>
+  <div class="rotate-90 absolute  top-0 left-0   radial-progress text-slate-300" style="--value:100;" aria-valuenow="100" role="progressbar"></div>
+</div>
+<h3 class="font-semibold text-xl">Experienced Coach</h3>
+<p class="opacity-80 text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+<!-- third card  -->
+<div  class="flex flex-col justify-center items-center  space-y-2 p-5 ">
+<div class="relative">
+  <div class="   z-50 radial-progress text-red-500" style="--value:80;" aria-valuenow="80" role="progressbar">87%</div>
+  <div class="rotate-90 absolute  top-0 left-0   radial-progress text-slate-300" style="--value:100;" aria-valuenow="100" role="progressbar"></div>
+</div>
+<h3 class="font-semibold text-xl">Senior Player</h3>
+<p class="opacity-80 text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+<!-- fourth card  -->
+ <div  class="flex flex-col justify-center items-center  space-y-2 p-5 ">
+<div class="relative">
+  <div class=" rotate-90  z-50 radial-progress  text-slate-200"   style="--value:20;" aria-valuenow="80" role="progressbar"></div>
+
+  <div class=" absolute  top-0 left-0   radial-progress text-blue-500 " style="--value:100;" aria-valuenow="100" role="progressbar">80% </div>
+</div>
+<h3 class="font-semibold text-xl">Prayer Facility</h3>
+<p class="opacity-80 text-center">Amet consectetur. Condimentum dignissim adipiscing .</p>
+</div>
+
+</div>
+</section>
+ <!-- program section  -->
+ <section class=" my-24 px-8">
+<!-- text part -->
+<div class="border-y-4 border-dashed flex flex-col justify-center items-center space-y-3  pb-5">
+    <h2 class="font-extrabold text-4xl mt-8">Program Sections</h2>
+    <p class="font-medium text-base opacity-80  lg:w-1/2 text-center   ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  </div> 
+  <!-- image part  -->
+<div class="grid  grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-5  pt-12 ">
+  <!-- first image   -->
+<div class=" min-h-[300px] w-full junior-program  flex flex-col justify-end  pl-10 pb-5 rounded-2xl ">
+  <div class=" space-y-3 lg:space-y-2">
+    <h2 class="font-extrabold text-3xl lg:text-5xl text-white">Junior Program</h2>
+    <p class="font-medium  text-xs lg:text-base text-white ">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+enim sagittis turpis in magna. Id et sed euismod natoque amet  <br>
+nunc morbi nulla. Tortor congue sed et in.</p>
+<button  onclick="welcome()"  class=" btn bg-hockey-primary border-none text-white">Register Now !</button>
+  </div>
+</div>
+<!-- second image  -->
+ <div class="min-h-[300px] w-full Teenager-program   flex flex-col justify-end  pl-10 pb-5 rounded-2xl ">
+  <div class="space-y-3 lg:space-y-2">
+    <h2 class="font-extrabold text-3xl lg:text-5xl text-white">Teenager Program</h2>
+    <p class="font-medium  text-xs lg:text-base text-white ">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+enim sagittis turpis in magna. Id et sed euismod natoque amet  <br>
+nunc morbi nulla. Tortor congue sed et in.</p>
+<button  onclick="welcome()" class=" btn bg-hockey-primary border-none text-white">Register Now !</button>
+  </div>
+</div>
+<!-- third image  -->
+<div class="min-h-[300px] w-full Professional-Program lg:col-span-2  flex flex-col justify-end  pl-10 pb-5 rounded-2xl ">
+  <div class="space-y-3 lg:space-y-2">
+    <h2 class="font-extrabold text-3xl lg:text-5xl text-white">Professional Program</h2>
+    <p class="font-medium  text-xs lg:text-base text-white ">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+enim sagittis turpis in magna. Id et sed euismod natoque amet  <br>
+nunc morbi nulla. Tortor congue sed et in.</p>
+<button class=" btn bg-hockey-primary border-none text-white">Register Now !</button>
+  </div>
+</div>
+</div> 
+
+ </section>
+
+ <!-- product section  -->
+<section class="my-24">
+<div class="border-y-4 border-dashed flex flex-col justify-center items-center space-y-3  pb-5">
+    <h2 class="font-extrabold text-4xl mt-8">Our New Products</h2>
+    <p class="font-medium text-base opacity-80  lg:w-1/2 text-center   ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  </div> 
+  <!-- cards section -->
+   <div class="rounded-lg grid grid-cols-1 lg:grid-cols-2 gap-6 border-4 ">
+<!-- first card  -->
+ <div class="border-2 flex   border-yellow-400 p-6 gap-5">
+<!-- image -->
+ <div>
+  <img src="./Images/5.png" alt="" srcset="">
+ </div>
+ <!-- content  -->
+ <div class="flex  border-4 border-red-300 w-full ">
+<!-- first line  -->
+<div class=" flex gap-5 border-4 border-green-500">
+
+  <div class="flex gap-2" >
+<h6><i class="fa-solid fa-star text-yellow-400"></i></h6>
+<h6>5.0</h6>
+  </div>
+
+  <div class="flex gap-2">
+<h6><i class="fa-solid fa-eye text-blue-500 "></i></h6>
+<h6>4.0</h6>
+  </div>
+
+  <div class="flex gap-2 ">
+<h6><i class="fa-solid fa-heart text-red-600"></i></h6>
+<h6>3.0</h6>
+  </div>
+
+</div>
+ <!-- second line  -->
+
+ </div>
+
+
+ </div>
+
+
+   </div>
+</section>
+
+
+     </main>
+<!-- footer part  -->
+<footer>
+
+</footer>
+</body>
+</html>
